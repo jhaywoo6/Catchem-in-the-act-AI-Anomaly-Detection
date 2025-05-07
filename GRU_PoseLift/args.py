@@ -71,7 +71,7 @@ def init_parser(default_data_dir='data/', default_exp_dir='data/exp_dir'):
     parser.add_argument('--model_lr', type=float, default=5e-4, metavar='LR', help='Optimizer Learning Rate Parameter')
     parser.add_argument('--model_weight_decay', '-model_wd', type=float, default=5e-5, metavar='WD', help='Optimizer Weight Decay Parameter')
     parser.add_argument('--model_lr_decay', '-model_ld', type=float, default=0.99, metavar='LD', help='Optimizer Learning Rate Decay Parameter')
-    parser.add_argument('--model_hidden_dim', type=int, default=0, help='Features dim dimension')
+    parser.add_argument('--model_hidden_dim', type=int, default=512, help='Features dim dimension')
     parser.add_argument('--model_confidence', action='store_true', help='Create Figs')
     parser.add_argument('--K', type=int, default=8, help='Features dim dimension')
     parser.add_argument('--L', type=int, default=1, help='Features dim dimension')
